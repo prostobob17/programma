@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Архив ЧП-1130</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: #00ffcc;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    .glitch {
+      font-size: 1.5rem;
+      position: relative;
+    }
+
+    .glitch::before,
+    .glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.6;
+    }
+
+    .glitch::before {
+      color: red;
+      transform: translate(-1px, -1px);
+    }
+
+    .glitch::after {
+      color: blue;
+      transform: translate(1px, 1px);
+    }
+
+    .file-entry {
+      margin: 12px 0;
+      padding: 10px;
+      background-color: rgba(0, 255, 170, 0.08);
+      border-left: 3px solid #00ffcc;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    .file-entry:hover {
+      background-color: rgba(0, 255, 170, 0.15);
+    }
+
+    .label {
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="glitch" data-text="АРХИВ ЧП-1130">АРХИВ ЧП-1130</h1>
+  <p class="label">ДОСТУПНЫЕ МАТЕРИАЛЫ (ФЛАГ: УТЕЧКА)</p>
+
+  <div class="file-entry">▶ [01.12.2034] - obs7_cam3_final.MOV <br><span class="label">[ОБНАРУЖЕНО В СЕКТОРЕ 7] [КАМЕРА НАБЛЮДЕНИЯ]</span></div>
+  <div class="file-entry">▶ [15.02.2035] - hymn_survivors_v2.mp3 <br><span class="label">[ЗАПИСЬ МОЛИТВЫ] [ПЕРЕВЕДЕНА]</span></div>
+  <div class="file-entry">▶ [??.??.????] - ???.txt <br><span class="label">[ФАЙЛ ПОВРЕЖДЁН] [НЕИЗВЕСТНЫЙ ЯЗЫК]</span></div>
+  <div class="file-entry">▶ [03.04.2035] - last_signal_decode.mp4 <br><span class="label">[ПЕРЕДАЧА] [ПОСЛЕДНЕЕ СООБЩЕНИЕ]</span></div>
+  <div class="file-entry">▶ [08.04.2035] - cult_folder_notes.pdf <br><span class="label">[ДОКУМЕНТЫ СЕКТЫ] [АНАЛИЗ]</span></div>
+
+  <p style="margin-top: 40px; font-size: 0.7rem; color: #333;">
+    <em>все материалы получены в результате утечки. прослушивание, просмотр и анализ осуществляется на ваш страх и риск.</em>
+  </p>
+</body>
+</html>
