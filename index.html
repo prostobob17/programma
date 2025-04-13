@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Сообщество Вавилонской Башни</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Сообщество Вавилонской Башни</h1>
+    <div class="entry" onclick="triggerScreamerThenOpen('assets/начало.mp4')">▶ ВИДЕО</div>
+    <div class="entry" onclick="triggerScreamerThenOpen('assets/дневник.txt')">▶ ЗАПИСКИ</div>
+  </div>
+  <div id="screamer" class="hidden">
+    <img src="assets/скример.jpg" />
+    <audio id="screamSound" src="assets/гул.flac" autoplay></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
